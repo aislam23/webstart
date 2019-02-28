@@ -467,6 +467,14 @@ img {
       flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+  .cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 /* Стили модального окна */
 .modal {
   position: fixed;
