@@ -7,6 +7,7 @@
 	<title>Document</title>
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -139,7 +140,7 @@
 				<span class="section-subtitle price__subtitle">Прайс на наши услуги</span>
 				<!-- /.section-subtitle price__subtitle -->
 				<div class="cards">
-					<div class="card price__card">
+					<div class="card price__card wow fadeInUp"> 
 						<div class="card__image"><img src="img/price/bathroom.png" alt=""></div>
 						<!-- /.card__image -->
 						<div class="card__text">
@@ -151,7 +152,7 @@
 						<!-- /.card__text -->
 					</div>
 					<!-- /.card -->
-					<div class="card price__card">
+					<div class="card price__card wow fadeInUp" data-wow-delay="0.1s">
 						<div class="card__image"><img src="img/price/living.png" alt=""></div>
 						<!-- /.card__image -->
 						<div class="card__text">
@@ -163,7 +164,7 @@
 						<!-- /.card__text -->
 					</div>
 					<!-- /.card -->
-					<div class="card price__card">
+					<div class="card price__card wow fadeInUp" data-wow-delay="0.2s">
 						<div class="card__image"><img src="img/price/office.png" alt=""></div>
 						<!-- /.card__image -->
 						<div class="card__text">
@@ -175,7 +176,7 @@
 						<!-- /.card__text -->
 					</div>
 					<!-- /.card -->
-					<div class="card price__card">
+					<div class="card price__card wow fadeInUp" data-wow-delay="0.3s">
 						<div class="card__image"><img src="img/price/buildings.png" alt=""></div>
 						<!-- /.card__image -->
 						<div class="card__text">
@@ -187,7 +188,7 @@
 						<!-- /.card__text -->
 					</div>
 					<!-- /.card -->
-					<div class="card price__card">
+					<div class="card price__card wow fadeInUp" data-wow-delay="0.4s">
 						<div class="card__image"><img src="img/price/kitchen.png" alt=""></div>
 						<!-- /.card__image -->
 						<div class="card__text">
@@ -199,7 +200,7 @@
 						<!-- /.card__text -->
 					</div>
 					<!-- /.card -->
-					<div class="card price__card">
+					<div class="card price__card wow fadeInUp" data-wow-delay="0.5s">
 						<div class="card__image"><img src="img/price/houses.png" alt=""></div>
 						<!-- /.card__image -->
 						<div class="card__text">
@@ -217,6 +218,67 @@
 			<!-- /.container -->
 		</section>
 		<!-- /.section price -->
+
+		<section class="section steps">
+			<div class="container">
+				<h2 class="section-title steps__title">Наши специалисты готовы выехать на замер в любое удобное для Вас время</h2>
+				<!-- /.section-title steps__title -->
+				<span class="section-subtitle steps__subtitle">5 шагов до ремонта</span>
+				<!-- /.section-subtitle steps__subtitle -->
+				<div class="steps-block">
+					<div class="step">
+						<div class="step__image">
+							<img src="img/steps/woman-with-headset.png" alt="">
+						</div>
+						<!-- /.step__image -->
+						<p class="step__text">Вы звоните нам или оставляете заявку</p>
+						<!-- /.step__text -->
+					</div>
+					<!-- /.step -->
+					<div class="step">
+						<div class="step__image">
+							<img src="img/steps/wall-clock.png" alt="">
+						</div>
+						<!-- /.step__image -->
+						<p class="step__text">Согласуем удобное для Вас время выезда специалиста на замер</p>
+						<!-- /.step__text -->
+					</div>
+					<!-- /.step -->
+					<div class="step">
+						<div class="step__image">
+							<img src="img/steps/money.png" alt="">
+						</div>
+						<!-- /.step__image -->
+						<p class="step__text">Рассчитываем смету согласовываем с Вами</p>
+						<!-- /.step__text -->
+					</div>
+					<!-- /.step -->
+					<div class="step">
+						<div class="step__image">
+							<img src="img/steps/folded-document-icon.png" alt="">
+						</div>
+						<!-- /.step__image -->
+						<p class="step__text">Подписываем договор закупаем материал по оптовым ценам</p>
+						<!-- /.step__text -->
+					</div>
+					<!-- /.step -->
+					<div class="step">
+						<div class="step__image">
+							<img src="img/steps/calendar.png" alt="">
+						</div>
+						<!-- /.step__image -->
+						<p class="step__text">Выполняем ремонт в указанные сроки</p>
+						<!-- /.step__text -->
+					</div>
+					<!-- /.step -->
+				</div>
+				<!-- /.steps-block -->
+			</div>
+			<!-- /.container -->
+		</section>
+		<!-- /.section steps -->
+
+		
 		
 		<!-- /.offer -->
 	</main>
@@ -235,7 +297,11 @@
 		crossorigin="anonymous"></script>
 	<script src="js/modal.js"></script>
 	<script src="js/slick.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script>
+		/* Ининциализация WOW.js */
+		new WOW().init();
+		/* Скрипт слайдера */
 		$(document).ready(function() {
 			$('.slider').slick({
 				slidesToShow: 3,
