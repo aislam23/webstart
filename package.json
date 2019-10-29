@@ -1,0 +1,28 @@
+{
+  "name": "webstart",
+  "version": "1.0.0",
+  "description": "Сайт строительной компании",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aislam23/webstart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aislam23/webstart/issues"
+  },
+  "homepage": "https://github.com/aislam23/webstart#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-jsmin": "^0.1.5",
+    "gulp-tinify": "^1.0.2"
+  },
+  "dependencies": {
+    "gulp-htmlmin": "^5.0.1"
+  }
+}
